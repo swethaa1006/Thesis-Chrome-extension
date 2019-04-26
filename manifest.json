@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Thesis extention",
+  "version": "0.2",
+
+  "web_accessible_resources": [
+     "fonts/*.*"
+
+  ],
+
+  "content_scripts": [
+    {
+      "matches":[
+        "<all_urls>"
+      ],
+       "css": ["style.css"],
+       "js": ["p5.js","additional_sketch.js","p5.dom.js","para_style.js","sketch.js"]
+    }
+  ]
+}

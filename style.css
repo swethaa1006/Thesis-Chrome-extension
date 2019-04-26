@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'myFont';
+  src: url('../fonts/SuisseBPIntl-Regular.otf')format("truetype");
+}
+[class*="col-"] {
+  /* display: inline-block; */
+  width: 560px;
+
+}
+
+svg {
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+    max-height: 100%;
+}
+
+svg circle {
+    fill: none;
+    mix-blend-mode: multiply;
+}
+
+.shape {
+    height: 100%;
+    width: 50px;
+    shape-margin: 0.1px;
+}
+
+.shape-left {
+    float: left;
+    shape-outside: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/circle-left.svg);
+}
+
+.shape-right {
+    float: right;
+    shape-outside: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/circle-right.svg);
+}
+
+.text1 {
+  margin: 0;
+  /* text-align: justify; */
+  text-align-last: center;
+    font-size: 4.5px;
+    letter-spacing: 0.2px;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    line-height: 1;
+    color: black;
+    text-align: justify;
+    /* overflow: hidden visible; */
+}
+
+.rotate1{
+  float: left;
+    /* font-size: 15px; */
+    position: relative;
+    width: 1200px;
+    height:  auto;
+  /* margin: 10%; */
+}
+.rotate{
+  float: left;
+    /* font-size: 15px; */
+    position: relative;
+    width: auto;
+    height:  auto;
+  /* margin: 10%; */
+}
+.col-1 {
+  text-align:left;
+  width: 480px;
+    /* transform: translate3d(42px, -62px, -335px); */
+  /* transform:scale3d(-0.1,9,-0.1); */
+  /* color: rgb(255, 0, 0); */
+  transform: rotate(90deg);
+  font-size: 120%;
+
+  padding-top: 180px;
+  line-height: 30px;
+}
+.col-2 {
+  /* transform:scale3d(-0.1,9,-0.1); */
+
+    padding-top: 200px;
+  /* color: rgb(255, 0, 0); */
+  width: 540px;
+  transform: rotate(-90deg);
+  font-size: 120%;
+    line-height: 30px;
+}
+
+bdo{
+  position: inline;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 300%;
+  /* transform: skew(-15deg, -15deg); */
+}
+
+bdo1 {
+  position: absolute;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 100px;
+  clip-path:polygon(-10% -370%, 130% -374%, 103% 50%, 0% 65%);
+  transform: rotate(45deg);
+}
+bdo2 {
+
+  font-family: helvetica;
+  /* color: rgba(255, 0, 0, 0.5); */
+
+  font-weight: normal;
+  font-size: 500%;
+
+  position: absolute;
+
+  clip-path: polygon(-30% -30%, 150% -30%, 150% 50%, -30% 50%);
+
+}
+/* Top half of image */
+bdo3 {
+  position: absolute;
+  font-family: helvetica;
+  text-transform:uppercase;
+  font-weight: normal;
+  font-size: 200%;
+  /* color: rgba(255, 0, 0, 0.5); */
+clip-path:polygon(-17% -179%, 130% -142%, 185% 54%, -1% 50%);
+/* polygon(-50% -50%, 130% -50%, 130% 50%, -50% 50%); */
+
+}
+  /* Bottom half of image */
+repeat1 {
+  position: absolute;
+  font-family: helvetica;
+  font-weight: bold;
+  /* padding-top: 0.07%; */
+  font-size: 100px;
+  /* color: rgba(255, 0, 0, 0.5); */
+
+  /* clip-path: polygon(0% 50%, 100% 50%, 142% 260%, 0% 250%); */
+  clip-path:polygon(0% 50%, 126% 50%, 106% 848%, -282% 156%);
+  padding-left: 10px;
+  transform: rotate(45deg);
+  /* transform: skew(-15deg, -15deg); */
+
+}
+  /* Bottom half of image */
+repeat2 {
+
+  color: rgba(255, 0, 0, 0.5);
+  position: absolute;
+  font-family: helvetica;
+  font-weight: normal;
+  padding-top: 0.07%;
+  font-size: 500%;
+  clip-path: polygon(-10% 50%, 150% 50%, 150% 150%, -10% 150%);
+  padding-left: 0.5%;
+  transform: rotate(90deg);
+
+}
+
+repeat3 {
+  position: absolute;
+  font-family: helvetica;
+  text-transform:uppercase;
+  font-weight: normal;
+  font-size: 200%;
+  /* color: rgba(255, 0, 0, 0.5); */
+
+  clip-path: polygon(0% 50%, 130% 50%, 130% 130%, 0% 130%);
+  padding-left: 0.5%;
+
+}
+
+div{
+float: none;
+}
+
+@media print {
+  /* all: initial;
+  * {
+    all: unset;
+  } */
+  div{
+  float: none;
+  }
+  .remove-all-styles {
+     all: revert;
+   }
+
+     @page
+  {
+   size: 8.5in 5.5in;
+   size: landscape;
+    margin: 2cm;
+
+ }
+ /* #header, #footer, #nav { display: none; !important; }  */
+}
+  /* * {
+
+    -webkit-transition: none !important;
+    transition: none !important;
+  } */
+/* body{
+  width: auto;
+  height: auto;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+
+font-size: 100%;
+/* width: 1053px; */
+/* vertical-align: baseline;
+background: transparent;
+font-family: helvetica;
+color: inherit;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-variant: normal;
+}
+p{
+  color: rgba(0, 0, 0, 0.5);
+}
+bdo2, bdo1,repeat2,repeat1{
+    color: rgba(255, 0, 0, 1);
+}
+*/
