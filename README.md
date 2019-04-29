@@ -2,9 +2,13 @@
 A chrome extension made using p5.js for my MDes thesis.
 This is code for google chrome extention that works on any website. 
 This was specifically made for my thesis content
+
  http://elupton.com/2010/10/the-designer-as-producer/
+ 
  https://swethaa1006.github.io/Content-1/
+ 
  https://swethaa1006.github.io/Content-2/
+ 
  The keyCode 0-9, q,w,e,r,t,u,i,o,p,a,s,d and up and down arrow works.
  It also works on mouse press and pops up the print window 
  https://swethaa1006.github.io/MDes-Thesis/ is the introduction of my thesis.
