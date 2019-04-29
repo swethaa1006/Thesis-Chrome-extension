@@ -1773,7 +1773,7 @@ function keyPressed() {
 
 
 
-mouse pressed function
+// mouse pressed function
 function mousePressed() {
 console.log("mouse pressed"+keyCode);
 keyCode = int(random(69,89));
