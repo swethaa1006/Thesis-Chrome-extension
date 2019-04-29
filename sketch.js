@@ -1,3 +1,13 @@
+//This is code for google chrome extention that works on any website. 
+//This was specifically made for my thesis content
+//  http://elupton.com/2010/10/the-designer-as-producer/
+//  https://swethaa1006.github.io/Content-1/
+//  https://swethaa1006.github.io/Content-2/
+//The keyCode 0-9, q,w,e,r,t,u,i,o,p,a,s,d and up and down arrow works.
+//It also works on mouse press and pops up the print window 
+// https://swethaa1006.github.io/MDes-Thesis/ is the introduction of my thesis.
+
+
 var charCount = 0;
 var paragraphsH1;
 var paragraphsH6;
@@ -1763,12 +1773,12 @@ function keyPressed() {
 
 
 
-// mouse pressed function
-// function mousePressed() {
-// console.log("mouse pressed"+keyCode);
-// keyCode = int(random(69,89));
-// keyPressed();
-// console.log("mouse pressed"+keyCode);
-//
-//   // location.reload(true);
-// }
+mouse pressed function
+function mousePressed() {
+console.log("mouse pressed"+keyCode);
+keyCode = int(random(69,89));
+keyPressed();
+console.log("mouse pressed"+keyCode);
+
+  // location.reload(true);
+}
