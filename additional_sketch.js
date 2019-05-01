@@ -262,7 +262,7 @@ function replacerSqr(str){
   var y = 141;
   // x=x+int(random(8,15));
 for (var i = 0; i < str.length; i++) {
-  res+="<svg viewBox='0 0 500 500' xmlns='http://www.w3.org/2000/svg'> <path id='MyPath' fill='none' stroke='none' d='M"+x1+","+x1+" l50,0 l0,-50 l-100,0 l0,100 l150,0 l0,-150 l-200,0 l0,200 l250,0 l0,-250 l-300,0 l0,300 l350,0 l0,-350 l-400,0 l0,400 l450,0 l0,-450 l-500,0 l0,500' /><text><textPath href='#MyPath'style='font-size: 200%; fill: rgb(0,0,0);'>"+str.substr(0,141)+"</textPath></text></svg>"
+  res+="<svg viewBox='0 0 500 500' xmlns='http://www.w3.org/2000/svg'> <path id='MyPath' fill='none' stroke='none' d='M"+x1+","+x1+" l50,0 l0,-50 l-100,0 l0,100 l150,0 l0,-150 l-200,0 l0,200 l250,0 l0,-250 l-300,0 l0,300 l350,0 l0,-350 l-400,0 l0,400 l450,0 l0,-450 l-500,0 l0,500' /><text><textPath href='#MyPath'style='font-size: 80%; fill: rgb(0,0,0);'>"+str.substr(0,141)+"</textPath></text></svg>"
 x=y;
 y+=y;
 if (y>=str.length) {
