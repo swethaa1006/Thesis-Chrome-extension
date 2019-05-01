@@ -500,51 +500,53 @@ function keyPressed() {
 
 
     } else if (keyCode === 53) {                                                //KEYCODE FOR 5-done
-      if (document.getElementById("mainColumn")) {
+       if (document.getElementById("mainColumn")) {
         document.getElementById("mainColumn").style.width = "1000px";
         document.getElementById("mainColumn").style.margin = "0px"
+        document.getElementById("logotype").style.visibility = "hidden"
       }
       for (elt of paragraphsH1) { //add other words
         s = elt.innerText;
-        elt.classList.add("rotate");
+        elt.classList.add("rotate2");
         s = replacerSqr(s);
         elt.innerHTML = s;
       }
+
       if((windwUrl!="http://elupton.com/2010/10/the-designer-as-producer/")||(c1>=2)){
       for (elt of paragraphsDiv) {
         s = elt.innerText;
-        elt.classList.add("rotate");
+        elt.classList.add("rotate2");
         s = replacerSqr(s);
         elt.innerHTML = s;
       }
     }
       for (elt of paragraphsH2) {
         s = elt.innerText;
-        elt.classList.add("rotate");
+        elt.classList.add("rotate2");
         s = replacerSqr(s);
         elt.innerHTML = s;
       }
       for (elt of paragraphsH3) {
         s = elt.innerText;
-        elt.classList.add("rotate");
+        elt.classList.add("rotate2");
         s = replacerSqr(s);
         elt.innerHTML = s;
       }
       for (elt of paragraphsH6) {
         s = elt.innerText;
-        elt.classList.add("rotate");
+        elt.classList.add("rotate()");
         s = replacerSqr(s);
         elt.innerHTML = s;
       }
       for (elt of paragraphsSpan) {
         s = elt.innerText;
-        elt.classList.add("rotate");
+        elt.classList.add("rotate2");
         s = replacerSqr(s);
         elt.innerHTML = s;
       }
       for (elt of paragraphsli) {
         s = elt.innerText;
-        elt.classList.add("rotate");
+        elt.classList.add("rotate2");
         s = replacerSqr(s);
         elt.innerHTML = s;
       } //add other words
@@ -558,11 +560,12 @@ function keyPressed() {
           var s = "";
         }
         if (s.length>0) {
-          elt.classList.add("rotate");
+          elt.classList.add("rotate2");
         }
         elt.innerHTML = s;
         charCount++;
       }
+
     } else if (keyCode === 54) {                                                //KEYCODE FOR 6-done
 
       for (elt of paragraphsH1) { //add other words
