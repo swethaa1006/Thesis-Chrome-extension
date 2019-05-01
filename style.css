@@ -67,6 +67,19 @@ svg circle {
     height:  auto;
   /* margin: 10%; */
 }
+
+.rotate2{
+  float: left;
+    /* font-size: 15px; */
+    position: relative;
+    width: 1200px;
+    /* width: auto; */
+    height:  auto;
+    /* font-size: 200%; */
+    letter-spacing: 10.8px;
+  /* margin: 10%; */
+}
+
 .col-1 {
   text-align:left;
   width: 480px;
